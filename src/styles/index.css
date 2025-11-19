@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Colors - Green & White Premium Palette */
+  --color-white: #ffffff;
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #eeeeee;
+  --color-gray-300: #e0e0e0;
+
+  --color-green-500: #3d8c28;
+  --color-green-600: #2d6a1e;
+  --color-green-700: #236017;
+  --color-green-800: #1a4812;
+  --color-green-900: #1f4d15;
+
+  --color-text-900: #1a1a1a;
+  --color-text-800: #2d2d2d;
+  --color-text-700: #404040;
+
+  --color-green-50: #f0f8ed;
+  --color-green-100: #e8f5e3;
+  --color-green-200: #d4ebc9;
+
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+
+  /* Font Sizes - Balanced Hierarchy */
+  --font-size-hero: clamp(2.5rem, 8vw, 5.5rem);
+  --font-size-display: clamp(1.75rem, 5vw, 3rem);
+  --font-size-micro: 0.8rem;
+
+  /* Spacing - 8-point Grid */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-26: 6.5rem;
+  --spacing-30: 7.5rem;
+  --spacing-34: 8.5rem;
+
+  /* Animations */
+  --animate-fade-in: fade-in 0.8s ease-in-out;
+  --animate-slide-up: slide-up 0.6s ease-out;
+  --animate-subtle-pulse: subtle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+* {
+  border-color: rgb(224 224 224 / 0.5);
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-text-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Balanced Section Spacing */
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Premium button styles */
+.btn-primary {
+  background-color: var(--color-green-600);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border-radius: 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-green-700);
+  transform: scale(1.05);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-green-600);
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-green-600);
+  border-radius: 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-green-700);
+  background-color: var(--color-green-600);
+  color: var(--color-white);
+}
+
+/* Subtle link hover */
+.link-subtle {
+  position: relative;
+}
+
+.link-subtle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: all 0.3s ease;
+}
+
+.link-subtle:hover::after {
+  width: 100%;
+}
+
+/* Custom scrollbar */
+.scrollbar-luxury::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-luxury::-webkit-scrollbar-track {
+  background-color: var(--color-gray-100);
+}
+
+.scrollbar-luxury::-webkit-scrollbar-thumb {
+  background-color: var(--color-green-500);
+  border-radius: 9999px;
+}
+
+.scrollbar-luxury::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-green-600);
+}
