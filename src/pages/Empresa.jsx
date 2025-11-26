@@ -1,4 +1,4 @@
-import { Award, Users, TrendingUp, CheckCircle } from 'lucide-react'
+import { Award, Users, TrendingUp } from 'lucide-react'
 
 const Empresa = () => {
   const valores = [
