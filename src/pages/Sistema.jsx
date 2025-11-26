@@ -68,17 +68,17 @@ const Sistema = () => {
               return (
                 <div key={index} className="text-center group">
                   <div className="mb-6 md:mb-8 flex justify-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gray-50/5 flex items-center justify-center transition-all duration-300 group-hover:bg-gray-50 group-hover:scale-110">
-                      <IconComponent size={28} className="md:w-9 md:h-9 text-gray-50 transition-colors duration-300 group-hover:text-green-600" />
+                    <div className="w-16 h-16 md:w-20 md:h-20 xl:w-24 xl:h-24 2xl:w-28 2xl:h-28 rounded-full bg-gray-50/5 flex items-center justify-center transition-all duration-300 group-hover:bg-gray-50 group-hover:scale-110">
+                      <IconComponent size={28} className="md:w-9 md:h-9 xl:w-12 xl:h-12 2xl:w-14 2xl:h-14 text-gray-50 transition-colors duration-300 group-hover:text-green-600" />
                     </div>
                   </div>
-                  <div className="text-3xl md:text-4xl font-display font-bold text-gray-50/10 mb-3 md:mb-4">
+                  <div className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-display font-bold text-gray-50/10 mb-3 md:mb-4">
                     {String(index + 1).padStart(2, '0')}
                   </div>
-                  <h3 className="text-xl font-display font-semibold mb-4">
+                  <h3 className="text-xl xl:text-2xl font-display font-semibold mb-4">
                     {etapa.title}
                   </h3>
-                  <p className="text-gray-100/70 leading-relaxed">
+                  <p className="text-gray-100/70 xl:text-lg leading-relaxed">
                     {etapa.description}
                   </p>
                 </div>

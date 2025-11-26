@@ -67,9 +67,9 @@ const ContactForm = () => {
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-green-600 mt-2"></div>
                 <div>
-                  <p className="font-medium mb-1 text-sm">Vistoria técnica gratuita</p>
+                  <p className="font-medium mb-1 text-sm">Vistoria técnica especializada</p>
                   <p className="text-sm text-text-900/60">
-                    Análise inicial sem custo
+                    Análise completa e detalhada
                   </p>
                 </div>
               </div>

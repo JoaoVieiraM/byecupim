@@ -70,8 +70,8 @@ const CaseStudies = () => {
                 className="group bg-gray-50 text-text-900 p-6 md:p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
               >
                 {/* Icon */}
-                <div className="w-12 h-12 md:w-14 md:h-14 bg-green-600/5 rounded-full flex items-center justify-center mb-4 md:mb-6 transition-all duration-300 group-hover:bg-green-600 group-hover:scale-110">
-                  <IconComponent size={24} className="md:w-7 md:h-7 text-green-600 transition-colors duration-300 group-hover:text-gray-50" />
+                <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 bg-green-600/5 rounded-full flex items-center justify-center mb-4 md:mb-6 transition-all duration-300 group-hover:bg-green-600 group-hover:scale-110">
+                  <IconComponent size={24} className="md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 text-green-600 transition-colors duration-300 group-hover:text-gray-50" />
                 </div>
 
                 {/* Category Badge */}
@@ -82,17 +82,17 @@ const CaseStudies = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-display font-semibold mb-2">
+                <h3 className="text-xl xl:text-2xl font-display font-semibold mb-2">
                   {caseStudy.title}
                 </h3>
 
                 {/* Client */}
-                <p className="text-sm text-text-900/60 mb-4">
+                <p className="text-sm xl:text-base text-text-900/60 mb-4">
                   {caseStudy.client}
                 </p>
 
                 {/* Description */}
-                <p className="text-sm text-text-900/80 leading-relaxed mb-6">
+                <p className="text-sm xl:text-base text-text-900/80 leading-relaxed mb-6">
                   {caseStudy.description}
                 </p>
 

@@ -67,13 +67,13 @@ const Empresa = () => {
               const IconComponent = valor.icon
               return (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mx-auto mb-8 rounded-full bg-gray-50/5 flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-gray-50" />
+                  <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 mx-auto mb-8 rounded-full bg-gray-50/5 flex items-center justify-center">
+                    <IconComponent className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 text-gray-50" />
                   </div>
-                  <h3 className="text-2xl font-display font-semibold mb-4">
+                  <h3 className="text-2xl xl:text-3xl font-display font-semibold mb-4">
                     {valor.title}
                   </h3>
-                  <p className="text-gray-100/70 leading-relaxed">
+                  <p className="text-gray-100/70 xl:text-lg leading-relaxed">
                     {valor.description}
                   </p>
                 </div>

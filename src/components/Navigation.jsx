@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import logo from '../assets/Gemini_Generated_Image_cw60fbcw60fbcw60-removebg-preview.png'
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,8 +20,15 @@ const Navigation = () => {
       <header className="fixed top-0 left-0 right-0 z-40 bg-gray-100/95 backdrop-blur-sm border-b border-text-900/10">
         <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 py-6 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-display font-semibold text-text-900">
-            ByeCupim
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="ByeCupim Logo"
+              className="h-10 w-auto"
+            />
+            <span className="text-2xl font-display font-semibold text-text-900">
+              ByeCupim
+            </span>
           </Link>
 
           {/* Hamburger Button */}
@@ -29,7 +37,7 @@ const Navigation = () => {
             className="p-2 text-text-900 transition-transform duration-300 hover:scale-110"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={28} className="md:w-8 md:h-8 xl:w-9 xl:h-9" /> : <Menu size={28} className="md:w-8 md:h-8 xl:w-9 xl:h-9" />}
           </button>
         </div>
       </header>
@@ -48,12 +56,21 @@ const Navigation = () => {
               className="p-2 text-text-900 transition-transform duration-300 hover:scale-110"
               aria-label="Close menu"
             >
-              <X size={32} />
+              <X size={32} className="md:w-9 md:h-9 xl:w-10 xl:h-10" />
             </button>
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex-1 flex items-center justify-center">
+          <nav className="flex-1 flex flex-col items-center justify-center">
+            {/* Logo no centro */}
+            <div className="mb-12 md:mb-16 animate-fade-in">
+              <img
+                src={logo}
+                alt="ByeCupim Logo"
+                className="h-20 md:h-24 lg:h-28 xl:h-32 w-auto mx-auto"
+              />
+            </div>
+
             <ul className="space-y-8 text-center">
               {navLinks.map((link, index) => (
                 <li

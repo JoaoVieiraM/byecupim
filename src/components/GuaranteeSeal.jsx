@@ -12,7 +12,7 @@ const GuaranteeSeal = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-green-600/5 px-4 py-2 rounded-full mb-4">
-            <Shield size={16} className="text-green-600" />
+            <Shield size={16} className="text-green-600 md:w-5 md:h-5 xl:w-6 xl:h-6" />
             <p className="text-micro uppercase tracking-wider text-green-600 font-medium">
               Compromisso Premium
             </p>
@@ -38,19 +38,14 @@ const GuaranteeSeal = () => {
 
                   {/* Content */}
                   <div className="text-center text-gray-50 z-10">
-                    <Shield className="w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12 mx-auto mb-2 md:mb-3 animate-fade-in" />
-                    <p className="text-3xl md:text-4xl font-display font-bold mb-1">5</p>
-                    <p className="text-xs md:text-sm uppercase tracking-wider">Anos</p>
-                    <p className="text-[10px] md:text-xs uppercase tracking-widest opacity-80 mt-1">Garantia</p>
+                    <Shield className="w-6 h-6 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 mx-auto mb-2 md:mb-3 animate-fade-in" />
+                    <p className="text-3xl md:text-4xl xl:text-5xl font-display font-bold mb-1">5</p>
+                    <p className="text-xs md:text-sm xl:text-base uppercase tracking-wider">Anos</p>
+                    <p className="text-[10px] md:text-xs xl:text-sm uppercase tracking-widest opacity-80 mt-1">Garantia</p>
                   </div>
 
                   {/* Decorative Ring */}
                   <div className="absolute inset-0 rounded-full border-t-2 border-gray-50/10 animate-spin" style={{ animationDuration: '20s' }}></div>
-                </div>
-
-                {/* Decorative Numbers */}
-                <div className="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 bg-green-500 rounded-full w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-gray-50 font-bold text-base md:text-lg lg:text-xl shadow-lg">
-                  25
                 </div>
               </div>
             </div>
@@ -76,10 +71,10 @@ const GuaranteeSeal = () => {
                   'Suporte técnico especializado',
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-600/10 flex items-center justify-center mt-0.5">
-                      <Check size={12} className="text-green-600" />
+                    <div className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 rounded-full bg-green-600/10 flex items-center justify-center mt-0.5">
+                      <Check size={12} className="text-green-600 md:w-4 md:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6" />
                     </div>
-                    <p className="text-sm text-text-900/80">{item}</p>
+                    <p className="text-sm xl:text-base text-text-900/80">{item}</p>
                   </div>
                 ))}
               </div>
